@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="submit.css">
+  </head>
+  <body>
+    <div class="box">
+         <img src="rating2.png">
+      <h1 id="thank-you-message">
+            
+      </h1>
+    </div>
+
+    <script>
+      const rating = localStorage.getItem('rating');
+      document.getElementById('thank-you-message').innerHTML = `<button id= "result"> You have selected ${rating} out of 5.</button> 
+      <span class = "thanks">Thank you!</span> <p class= "message"> We appreciate you taking your time to give a rating. if you ever need support, dont hesitate to get in touch!`;
+    </script>
+  </body>
+</html>
